@@ -27,7 +27,7 @@ public class EpidemicModel2Builder implements ContextBuilder<Object> {
     public Context<Object> build(Context<Object> context) {
         context.setId("EpidemicModel2");
 
-        // Create space and grid (as in your existing code)
+        // Create space and grid 
         ContinuousSpaceFactory spaceFactory = ContinuousSpaceFactoryFinder.createContinuousSpaceFactory(null);
         ContinuousSpace<Object> space = spaceFactory.createContinuousSpace(
             "space", context, new RandomCartesianAdder<>(), 
